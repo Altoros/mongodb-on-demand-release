@@ -1,0 +1,8 @@
+set -e -x
+
+tar zxf net-snmp/net-snmp-5.7.3.tar.gz
+
+cd net-snmp-5.7.3
+./configure --prefix=${BOSH_INSTALL_TARGET} --enable-ipv6 --with-defaults --disable-embedded-perl --disable-as-needed
+make
+make install

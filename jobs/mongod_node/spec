@@ -14,6 +14,7 @@ templates:
 
 packages:
   - mongod-node
+  - net-snmp
 
 provides:
 - name: mongod_node
